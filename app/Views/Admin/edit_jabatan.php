@@ -9,6 +9,7 @@
   </div>
 
   <form method="POST" action="<?= base_url('/admin/jabatan/edit') . '/' . $jabatan['id_jabatan'] ?>">
+    <?= csrf_field() ?>
     <div class="form-group">
       <label for="nama">Nama Jabatan</label>
       <input type="text" name="nama_jabatan" class="form-control" id="nama" value="<?= $jabatan['nama_jabatan'] ?>">

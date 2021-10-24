@@ -5,6 +5,7 @@
         <div class="col-7 shadow rounded" style="background-color: #CCF2F4; height:600px; padding:20px">
             <h2 class="text-center mb-5">Form Registrasi</h2>
             <form method="POST" action="<?= base_url('/auth/registrasi/create') ?>">
+            <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Lengkap</label>
                     <input type="nama" class="form-control <?= ($validasi->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Your name" value="<?= old('nama'); ?>">

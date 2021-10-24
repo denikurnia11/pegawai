@@ -22,6 +22,7 @@
   <?php endif; ?>
 
   <form enctype="multipart/form-data" method="POST" action="<?= base_url('/admin/unit/create') ?>">
+    <?= csrf_field() ?>
     <div class="form-group">
       <label for="nama">Nama Unit</label>
       <input type="text" name="nama_unitkerja" class="form-control" id="nama" aria-describedby="emailHelp">

@@ -21,6 +21,7 @@
   <?php endif; ?>
 
   <form enctype="multipart/form-data" method="POST" action="<?= base_url('/admin/unit/edit') . '/' . $unit['id_unitkerja'] ?>">
+    <?= csrf_field() ?>
     <div class="form-group">
       <input type="hidden" name="dokumenLama" value="<?= $unit['dokumen']; ?>">
       <label for="nama">Nama Unit</label>

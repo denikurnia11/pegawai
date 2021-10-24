@@ -8,6 +8,7 @@
   </div>
 
   <form enctype="multipart/form-data" method="POST" action="<?= base_url('/admin/pegawai/create') ?>">
+    <?= csrf_field() ?>
     <div class="form-group">
       <label for="nama">Nama Pegawai</label>
       <input type="text" name="nama_pegawai" class="form-control <?= ($validasi->hasError('nama_pegawai')) ? 'is-invalid' : ''; ?>" id="nama">

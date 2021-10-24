@@ -11,6 +11,7 @@
                 </div>
             <?php endif; ?>
             <form method="POST" action="<?= base_url('/auth/login/cek') ?>">
+                <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@gmail.com" name="email">

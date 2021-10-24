@@ -9,6 +9,7 @@
   </div>
 
   <form enctype="multipart/form-data" method="POST" action="<?= base_url('/admin/pegawai/edit') . '/' . $pegawai['nip'] ?>">
+    <?= csrf_field() ?>
     <input type="hidden" name="fotoLama" value="<?= $pegawai['foto']; ?>">
     <div class="form-group">
       <label for="nama">Nama Pegawai</label>
