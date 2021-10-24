@@ -10,6 +10,7 @@
         <a class="nav-link" href="<?= base_url('/admin/pegawai') ?>">Pegawai</a>
         <a class="nav-link" href="<?= base_url('/admin/jabatan') ?>">Jabatan</a>
         <a class="nav-link" href="<?= base_url('/admin/unit') ?>">Unit Kerja</a>
+        <a class="nav-link" href="<?= base_url('/admin/user') ?>">User</a>
         <a class="nav-link text-danger" href="<?= base_url('/auth/login/logout') ?>">Logout</a>
       </div>
     </div>
