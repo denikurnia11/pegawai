@@ -14,5 +14,6 @@
         <a class="nav-link text-danger" href="<?= base_url('/auth/login/logout') ?>">Logout</a>
       </div>
     </div>
+    <p>Welcome, <?= session()->nama; ?></p>
   </div>
 </nav>

@@ -33,6 +33,7 @@ class Login extends BaseController
         } else {
             // Jika benar, arahkan user masuk ke aplikasi 
             $sessLogin = [
+                'nama' => $dataUser['nama'],
                 'role' => $dataUser['role']
             ];
             session()->set($sessLogin);
