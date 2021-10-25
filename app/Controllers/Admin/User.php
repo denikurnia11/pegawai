@@ -42,6 +42,7 @@ class User extends BaseController
 
     public function edit($id)
     {
+        // dd($this->request->getVar());
         $user = new UserModel();
         //Validasi
         if (!$this->validate([

@@ -18,6 +18,7 @@
                 <th scope="col">Nama</th>
                 <th scope="col">Email</th>
                 <th scope="col">Password</th>
+                <th scope="col">Role</th>
                 <th scope="col">Action</th>
             </tr>
         </thead>
@@ -29,6 +30,7 @@
                     <td><?= $row['nama'] ?></td>
                     <td><?= $row['email'] ?></td>
                     <td><?= $row['password'] ?></td>
+                    <td><?= $row['role'] ?></td>
                     <td><a href="<?= base_url('/admin/user/delete') . '/' . $row['id_user'] ?>">
                             <button class="btn btn-danger">Hapus</button>
                         </a>

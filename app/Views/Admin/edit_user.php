@@ -34,7 +34,6 @@
         <div class="form-group">
             <label for="role">Role</label>
             <select class="form-control" name="role" id="role" required>
-                <option value="">Pilih role</option>
                 <option <?= ($user['role'] == 'user' ? 'selected' : ''); ?> value="user">User</option>
                 <option <?= ($user['role'] == 'admin' ? 'selected' : ''); ?> value="admin">Admin</option>
             </select>
