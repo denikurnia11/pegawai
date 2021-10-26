@@ -58,6 +58,12 @@ class User extends BaseController
                     'required' => 'Email harus diisi.'
                 ]
             ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi.'
+                ]
+            ]
         ])) {
             return redirect()->to(base_url() . '/admin/user/ubah/' . $id)->withInput();
         }
@@ -89,6 +95,12 @@ class User extends BaseController
                     'required' => 'Email harus diisi.'
                 ]
             ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi.'
+                ]
+            ]
 
         ])) {
             return redirect()->to(base_url() . '/admin/user/tambah')->withInput();
