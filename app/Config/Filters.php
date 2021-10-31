@@ -34,12 +34,12 @@ class Filters extends BaseConfig
             'csrf',
             'adminfilter' => [
                 'except' => [
-                    '/', '/login', '/auth/*'
+                    '/', '/auth/*'
                 ]
             ],
             'userfilter' => [
                 'except' => [
-                    '/', '/login', '/auth/*'
+                    '/', '/auth/*'
                 ]
             ]
             // 'honeypot',
