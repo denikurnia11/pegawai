@@ -42,9 +42,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="d-flex justify-content-center">
-        <?= $pager->links('user', 'pagination'); ?>
-    </div>
 </div>
 
 <?= $this->endSection('content') ?>

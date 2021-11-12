@@ -13,7 +13,7 @@ class JabatanModel extends Model
 
   public function getJabatan()
   {
-    $jabatan = $this->join('unit_kerja', 'jabatan.id_unitkerja = unit_kerja.id_unitkerja')->paginate(2, 'jabatan');
+    $jabatan = $this->join('unit_kerja', 'jabatan.id_unitkerja = unit_kerja.id_unitkerja')->findAll();
 
     return $jabatan;
   }

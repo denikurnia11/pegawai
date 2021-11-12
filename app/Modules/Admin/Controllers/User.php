@@ -13,8 +13,7 @@ class User extends BaseController
         $user = new UserModel();
 
         $data = [
-            'user' => $user->paginate(5, 'user'),
-            'pager' => $user->pager
+            'user' => $user->findAll()
         ];
 
         return view('App\Modules\Admin\Views\user', $data);

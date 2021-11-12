@@ -11,8 +11,7 @@ class Unit extends BaseController
     {
         $unit = new UnitModel();
         $data = [
-            'unit' => $unit->paginate(2, 'unit'),
-            'pager' => $unit->pager
+            'unit' => $unit->findAll()
         ];
         return view('App\Modules\User\Views\unit', $data);
     }

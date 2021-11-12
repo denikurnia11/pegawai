@@ -13,8 +13,7 @@ class Jabatan extends BaseController
     $jabatan = new JabatanModel();
 
     $data = [
-      'jabatan' => $jabatan->getJabatan(),
-      'pager' => $jabatan->pager
+      'jabatan' => $jabatan->getJabatan()
     ];
 
     return view('App\Modules\Admin\Views\jabatan', $data);

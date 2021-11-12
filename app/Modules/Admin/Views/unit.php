@@ -38,9 +38,6 @@
       <?php endforeach; ?>
     </tbody>
   </table>
-  <div class="d-flex justify-content-center">
-    <?= $pager->links('unit', 'pagination'); ?>
-  </div>
 </div>
 
 

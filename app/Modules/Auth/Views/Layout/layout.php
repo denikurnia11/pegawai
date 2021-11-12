@@ -22,6 +22,38 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- jQuery Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".formAuth").validate({
+        rules: {
+          nama: 'required',
+          email: {
+            required: true,
+            email: true
+          },
+          password: 'required',
+          cpassword: {
+            required: true,
+            equalTo: '#password'
+          }
+        },
+        messages: {
+          nama: 'Nama harus diisi.',
+          email: {
+            required: 'Email harus diisi.',
+            email: 'Email tidak valid.'
+          },
+          password: 'Password harus diisi.',
+          cpassword: {
+            required: 'Password harus diisi.',
+            equalTo: 'Confirm Password tidak sama.'
+          },
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

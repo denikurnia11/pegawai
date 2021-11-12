@@ -27,9 +27,7 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="d-flex justify-content-center">
-        <?= $pager->links('pegawai', 'pagination'); ?>
-    </div>
+
 </div>
 
 <?= $this->endSection() ?>

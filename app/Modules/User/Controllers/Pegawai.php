@@ -14,7 +14,7 @@ class Pegawai extends BaseController
 
         $data = [
             'pegawai' => $pegawai->getPegawai(),
-            'pager' => $pegawai->pager
+
         ];
 
         return view('App\Modules\User\Views\pegawai', $data);
