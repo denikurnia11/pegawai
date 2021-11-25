@@ -10,6 +10,11 @@
       <button class="btn btn-primary">Tambah</button>
     </a>
   </div>
+  <div class="">
+    <a href="<?= base_url('/admin/pegawai/cetakPDF') ?>" class="btn btn-danger mb-2">PDF</a>
+    <a href="<?= base_url('/admin/pegawai/cetakExcel') ?>" class="btn btn-success mb-2">Excel</a>
+    <a href="<?= base_url('/admin/pegawai/cetakWord') ?>" class="btn btn-primary mb-2">Word</a>
+  </div>
 
   <table class="table mt-3">
     <thead>
